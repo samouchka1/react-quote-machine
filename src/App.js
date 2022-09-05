@@ -11,7 +11,7 @@ const containerStyles = {
   width: '100%',
   margin: '10rem auto',
   border: '#0080ff solid 1px',
-  background: 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(214,231,255,1) 100%);',
+  background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(214,231,255,1) 100%);',
   borderRadius: '4px',
   padding: '1rem'
 }
