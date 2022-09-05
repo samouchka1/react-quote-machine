@@ -8,17 +8,17 @@ import {
 } from '@mui/material';
 
 const containerStyles = {
-  width: {
-    xs: 'xs',
-    md: 'md'
-  },
+  width: '100%',
   margin: '10rem auto',
+  border: '#0080ff 1px solid',
+  borderRadius: '4px',
+  padding: '1rem'
 }
 
 function App() {
 
- const [quote, setQuote] = useState('');
- const [author, setAuthor] = useState('');
+ const [quote, setQuote] = useState('quote');
+ const [author, setAuthor] = useState('author');
 
 
  const getQuotes = () => {
