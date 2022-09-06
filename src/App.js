@@ -9,11 +9,20 @@ import {
 
 const containerStyles = {
   width: '100%',
-  margin: '10rem auto',
+  margin: '10rem auto 2rem',
   border: '#0080ff solid 1px',
   background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(214,231,255,1) 100%);',
   borderRadius: '4px',
   padding: '1rem'
+}
+
+const signatureStyle = {
+  color: '#2d2d2d',
+  margin: '2rem auto',
+  fontSize: '.7rem',
+  textAlign: 'right',
+  caretColor: 'transparent',
+  paddingRight: '.5rem'
 }
 
 function App() {
@@ -36,13 +45,19 @@ function App() {
  }
 
   return (
-    <Container maxWidth='md' sx={containerStyles}>
-      <Box sx={{width: '100%', textAlign: 'center'}}>
-        <Typography sx={{padding: '2rem 0'}}>{quote}</Typography>
-        <Typography sx={{paddingBottom: '2rem'}}> - {author}</Typography>
-        <Button onClick={getQuotes}>Quote</Button>
-      </Box>
-    </Container>
+    <div>
+      <Container maxWidth='md' sx={containerStyles}>
+        <Box sx={{width: '100%', textAlign: 'center'}}>
+          <Typography sx={{padding: '2rem 0'}}>{quote}</Typography>
+          <Typography sx={{paddingBottom: '2rem'}}> - {author}</Typography>
+          <Button onClick={getQuotes}>Quote</Button>
+        </Box>
+      </Container>
+      <Typography maxWidth='md' sx={signatureStyle}>
+          &copy; {new Date().getFullYear()} samouchka
+      </Typography>
+    </div>
+    
   );
 }
 
